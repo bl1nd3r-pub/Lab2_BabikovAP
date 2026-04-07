@@ -13,7 +13,7 @@ namespace Lab1_FIO
 
         public static void LogSuccess(string requestParams, string triangleType, string coordinates)
         {
-            string entry = $"[SUCCESS] {DateTime.Now:yyyy-MM-dd HH:mm:ss}\nПараметры: {requestParams}\nРезультат: Тип={triangleType}, Координаты={coordinates}";
+            string entry = $"[SUCCESS] {DateTime.Now:yyyy-MM-dd HH:mm:ss}\nПараметры: {requestParams}\nРезультат: Тип={triangleType}, Координаты=[{coordinates}]";
             WriteLog(entry);
         }
 
